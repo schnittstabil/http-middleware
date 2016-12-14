@@ -16,5 +16,5 @@ interface ServerMiddlewareInterface
      *
      * @return ResponseInterface
      */
-    public function process(ServerRequestInterface $request, RequestHandlerInterface $next);
+    public function __invoke(ServerRequestInterface $request, RequestHandlerInterface $next);
 }
